@@ -17,107 +17,207 @@
     
     <h1>Mini Blog de Tecnologia</h1>
     
-    
-    <h2>Primeiros passos com HTML</h2>
+    <h3>Menu</h3>
+    <nav>
+        <ul>
+            <li><a href="#topico1">Primeiros passos com HTML</a></li>
+            <li><a href="#topico2">O papel do CSS</a></li>
+            <li><a href="#topico3">Validação do código</a></li>
+            <li><a href="#topico4">Exibição de um código pré-formatado</a></li>
+            <li><a href="#topico5">Personalização de parágrafo com fonte específica</a></li>
+            <li><a href="#topico6">Aplicação de diferentes estilos de uma mesma fonte na página HTML</a></li>
+            <li><a href="#topico7">Imagens com resoluções distintas:</a></li>
+            <li><a href="#topico8">Escolha da melhor imagem</a></li>
+            <li><a href="#topico9">Lista de bebidas favoritas</a></li>
+            <li><a href="#topico10">Lista aninhada - não ordenada - dentro de outra lista</a></li>
+            
+        </ul>
+    </nav>
+    <h2 id="topico1">Primeiros passos com HTML</h2>
     <p>HTML é a base das grandes páginas web. Com ele organizamos títulos, textos e a estrutura do conteúdo apresentado no
         navegador</p>
-        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-        <p class="separador">&#9733;&#9733;&#9733;</p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class="separador">&#9733;&#9733;&#9733;</p>
         
         
-        <h2>O papel do CSS</h2>
-        <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tornando os sites mais agradáveis visualmente.</p>
-        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-        <p class="separador">&#9733;&#9733;&#9733;</p>
+    <h2 id="topico2">O papel do CSS</h2>
+    <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tornando os sites mais agradáveis visualmente.</p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class="separador">&#9733;&#9733;&#9733;</p>
         
-        <h2>Validação do código</h2>
-        <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomendados para desenvolvimento web.</p>
-        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-        <p class="separador">&#9733;&#9733;&#9733;</p>
+    <h2 id="topico3">Validação do código</h2>
+    <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomendados para desenvolvimento web.</p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class="separador">&#9733;&#9733;&#9733;</p>
         
-        <h2>Exibição de um código pré-formatado</h2>
-        <p>Para exibir um código pré-formatado numa página HTML como o exemplo abaixo é preciso usar a tag "&lt;pre&gt;&lt;/pre&gt;" e só assim digitar o texto que deseja visualizar.</p>
-        <pre>
+    <h2 id="topico4">Exibição de um código pré-formatado</h2>
+    <p>Para exibir um código pré-formatado numa página HTML como o exemplo abaixo é preciso usar a tag "&lt;pre&gt;&lt;/pre&gt;" e só assim digitar o texto que deseja visualizar.</p>
+    <pre>
     def imprimir_padrao(num_linhas):
         for i in range(num_linhas):
             for num_colunas in range(num_linhas-i):
             print("*", end="")
         print()
-        </pre>
-        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-        <p class = "separador">&#9733;&#9733;&#9733;</p>
+    </pre>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class = "separador">&#9733;&#9733;&#9733;</p>
 
-        <h2>Personalização de parágrafo com fonte específica</h2>
-        <p>A modificação da fonte de uma texto específico em uma página HTML é feita a partir dos seguintes passos:</p>
-        <ul>
-            <li>Escolher uma fonte e obter os links necessários, por meio de sites como <a class="recomendacao-site" href="https://fonts.google.com/">Google Fonts</a>;</li>
-            <li>Adicionar o(s) link(s) na tag "head";</li>
-            <li>Aplicar a fonte ao elemento desejado usando CSS, seja por meio de uma classe ou diretamente no seletor do elemento.</li>
-        </ul>
-        <p>No exemplo abaixo, utilizei a fonte <a class= "link-fonte" href="https://fonts.google.com/specimen/Tilt+Neon">Tilt Neon</a>, veja como fica:</p>
-        <p class="texto-aleatorio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reiciendis eaque facere aliquam dolorum, dolore animi mollitia 
-        consectetur eos nam. Assumenda, rerum dolorum! Eaque fugiat temporibus hic repudiandae maiores? Consequatur. 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt totam ut! Repudiandae voluptates quibusdam incidunt 
-        debitis facere porro voluptate possimus, ut perspiciatis beatae architecto vitae necessitatibus quas fugiat perferendis. Lorem, ipsum dolor 
-        sit amet consectetur adipisicing elit. Praesentium eligendi sed quidem optio rem sint, nostrum a aut unde minima pariatur libero adipisci possimus 
-        </p>
-        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-        <p class = "separador">&#9733;&#9733;&#9733;</p>        
+    <h2 id="topico5">Personalização de parágrafo com fonte específica</h2>
+    <p>A modificação da fonte de uma texto específico em uma página HTML é feita a partir dos seguintes passos:</p>
+    <ul>
+        <li>Escolher uma fonte e obter os links necessários, por meio de sites como <a class="recomendacao-site" href="https://fonts.google.com/">Google Fonts</a>;</li>
+        <li>Adicionar o(s) link(s) na tag "head";</li>
+        <li>Aplicar a fonte ao elemento desejado usando CSS, seja por meio de uma classe ou diretamente no seletor do elemento.</li>
+    </ul>
+    <p>No exemplo abaixo, utilizei a fonte <a class= "link-fonte" href="https://fonts.google.com/specimen/Tilt+Neon">Tilt Neon</a>, veja como fica:</p>
+    <p class="texto-aleatorio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi reiciendis eaque facere aliquam dolorum, dolore animi mollitia 
+    consectetur eos nam. Assumenda, rerum dolorum! Eaque fugiat temporibus hic repudiandae maiores? Consequatur. 
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem incidunt totam ut! Repudiandae voluptates quibusdam incidunt 
+    debitis facere porro voluptate possimus, ut perspiciatis beatae architecto vitae necessitatibus quas fugiat perferendis. Lorem, ipsum dolor 
+    sit amet consectetur adipisicing elit. Praesentium eligendi sed quidem optio rem sint, nostrum a aut unde minima pariatur libero adipisci possimus 
+    </p>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class = "separador">&#9733;&#9733;&#9733;</p>        
 
-        <h2>Aplicação de diferentes estilos de uma mesma fonte na página HTML</h2>
-        <h3><span class = "destaque">Espessura:</span></h3>
-        <p>Para aplicar diferentes espessuras de uma mesma fonte em uma página HTML, siga os seguintes passos:</p> 
-        <ul>
-            <li>Escolha uma fonte que ofereça múltiplsas espessuras (normal, negrito, itálico, etc.) e obtenha os links necessários, por meio de sites como o Google Fonts, já mencionado acima;</li>
-            <li>Adicione os links na tag "head";</li>
-            <li>Crie classes CSS para cada espessura desejada, especificando a propriedade "font-weight" para negrito e "font-style" para itálico, por exemplo;</li>
-            <li>Aplique as classes aos elementos HTML conforme necessário para exibir as diferentes espessuras da fonte.</li>
-        </ul>
+    <h2 id="topico6">Aplicação de diferentes estilos de uma mesma fonte na página HTML</h2>
+    <h3><span class = "destaque">Espessura:</span></h3>
+    <p>Para aplicar diferentes espessuras de uma mesma fonte em uma página HTML, siga os seguintes passos:</p> 
+    <ul>
+        <li>Escolha uma fonte que ofereça múltiplsas espessuras (normal, negrito, itálico, etc.) e obtenha os links necessários, por meio de sites como o Google Fonts, já mencionado acima;</li>
+        <li>Adicione os links na tag "head";</li>
+        <li>Crie classes CSS para cada espessura desejada, especificando a propriedade "font-weight" para negrito e "font-style" para itálico, por exemplo;</li>
+        <li>Aplique as classes aos elementos HTML conforme necessário para exibir as diferentes espessuras da fonte.</li>
+    </ul>
 
-        <h4>Exemplo de aplicação de diferentes estilos da fonte "Playfair Display":</h4>
+    <h4>Exemplo de aplicação de diferentes estilos da fonte "Playfair Display":</h4>
 <!-- Duvida na diferença de section e div -->
-        <ul class="fonte-Playfair-Display">
-            <li class="normal"> Este parágrafo utiliza o estilo normal da fonte "Playfair Display".</li>
-            <li class="negrito700"> Este parágrafo utiliza o estilo negrito da fonte "Playfair Display" com "weight" = 700.</li>
-            <li class="negrito900"> Este parágrafo utiliza o estilo negrito da fonte "Playfair Display" com "weight" = 900.</li>
-        </ul>
-        
-        <h3><span class = "destaque">Inclinação:</span></h3>
-        <p>Para aplicar valores diferentes de inclinação na sua fonte, os passos são semelhantes aos de espessura, veja:</p>
-        <ul>
-            <li>Com a fonte já definida, como foi explicado acima, crie classes para cada inclinação desejada.</li>
-            <li>Com as classes definidas, especifique no CSS a inclinação de cada classe, por meio da propriedade "font-style". Você pode utilizar, por exemplo,
-                "deg" que é graus, ou seja, você vai definir quantos graus de inclinação você quer pra letra.</li>
+    <ul class="fonte-Playfair-Display">
+        <li class="normal"> Este parágrafo utiliza o estilo normal da fonte "Playfair Display".</li>
+        <li class="negrito700"> Este parágrafo utiliza o estilo negrito da fonte "Playfair Display" com "weight" = 700.</li>
+        <li class="negrito900"> Este parágrafo utiliza o estilo negrito da fonte "Playfair Display" com "weight" = 900.</li>
+    </ul>
+    
+    <h3><span class = "destaque">Inclinação:</span></h3>
+    <p>Para aplicar valores diferentes de inclinação na sua fonte, os passos são semelhantes aos de espessura, veja:</p>
+    <ul>
+        <li>Com a fonte já definida, como foi explicado acima, crie classes para cada inclinação desejada.</li>
+        <li>Com as classes definidas, especifique no CSS a inclinação de cada classe, por meio da propriedade "font-style". Você pode utilizar, por exemplo,
+            "deg" que é graus, ou seja, você vai definir quantos graus de inclinação você quer pra letra.</li>
+    </ul>
+
+    <h4>Exemplo de aplicação de diferentes inclinações na fonte "Roboto Flex":</h4>
+        <ul class="roboto-flex-inclinacao">
+            <li> Este parágrafo utiliza o estilo normal de inclinação da fonte "Roboto Flex".</li>
+            <li class="inclinacao10deg"> Este parágrafo utiliza "font-style = 10deg" na fonte "Roboto Flex".</li>
+            <li class="inclinacao20deg"> Este parágrafo utiliza "font-style = 20deg" na fonte "Roboto Flex".</li>
         </ul>
 
-        <h4>Exemplo de aplicação de diferentes inclinações na fonte "Roboto Flex":</h4>
-            <ul class="roboto-flex-inclinacao">
-                <li> Este parágrafo utiliza o estilo normal de inclinação da fonte "Roboto Flex".</li>
-                <li class="inclinacao10deg"> Este parágrafo utiliza "font-style = 10deg" na fonte "Roboto Flex".</li>
-                <li class="inclinacao20deg"> Este parágrafo utiliza "font-style = 20deg" na fonte "Roboto Flex".</li>
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class = "separador">&#9733;&#9733;&#9733;</p>
+
+    <h2 id="topico7">Imagens com resoluções distintas:</h2>
+
+    <div class="galeria-imgs">
+        <div class="item">
+            <h3>Imagem de baixa resolução</h3>
+            <img class="img-teste" src = "https://kamilansc.github.io/PPI-I/Atividade2/imagens/imagem-resolucao-baixa.jpg"
+                alt = "imagem de baixa resolução">
+            <p>Imagem leve e rápida</p>
+        </div>
+    
+        <div class="item">
+            <h3>Imagem de média resolução</h3>
+            <img class="img-teste" src="https://kamilansc.github.io/PPI-I/Atividade2/imagens/imagem-resolucao-media.jpg"
+                alt="imagem de média resolução">
+            <p>Equilíbrio entre qualidade e desempenho</p>
+        </div>
+    
+        <div class="item">
+            <h3>Imagem de alta resolução</h3>
+            <img class="img-teste" src="https://kamilansc.github.io/PPI-I/Atividade2/imagens/imagem-resolucao-alta.jpg"
+                alt="imagem de alta resolução">
+            <p>Alta qualidade, maior tempo de carregamento</p>
+        </div>
+    </div>
+
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class = "separador">&#9733;&#9733;&#9733;</p>
+
+    <h2 id="topico8">Escolha da melhor imagem</h2>
+    <p>As três resoluções no tópico acima, se baixadas com uma internet de menor desempenho, levam tempos distintos
+        e talvez significativos, para otimizar isso, existem tags como "&lt;Picture&gt;". Também tem o srcset, que não
+        é uma tag mas deixa o processo de escolha automático escolhendo a melhor resolução com base no tamanho 
+        da tela. Nesse caso em que as imagens são as mesmas e resoluções diferentes, o srcset desempenha melhor. 
+        O picture é mais recomendado quando tem que trocar para outra imagem por motivos de tamanho, por exemplo: na 
+        respectiva tela a imagem x ficará cortada, então coloca a imagem y. Abaixo utilizo o "&lt;Picture&gt;"
+        apesar de trabalhar com a mesma imagem. É só porque eu quero mesmo.
+    </p>
+
+    <picture class="img-picture-teste">
+        <source srcset="https://kamilansc.github.io/PPI-I/Atividade2/imagens/imagem-resolucao-alta.jpg" media="(min-width: 1024px)">
+        <source srcset="https://kamilansc.github.io/PPI-I/Atividade2/imagens/imagem-resolucao-media.jpg" media="(min-width: 600px)">
+        <img src="https://kamilansc.github.io/PPI-I/Atividade2/imagens/imagem-resolucao-baixa.jpg" alt="Imagem de baixa resolução">
+    </picture>
+
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class = "separador">&#9733;&#9733;&#9733;</p>
+
+    <h2 id="topico9">Lista de bebidas favoritas</h2>
+    <ol>
+        <li class="li-favorito">Café expresso intenso</li>
+        <li class="li-favorito">Cappucion cremoso</li>
+        <li class="li-favorito">Chocolate quente especial</li>
+        <li class="li-favorito">Chá de hortelã</li>
+    </ol>
+
+    <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
+    <p class = "separador">&#9733;&#9733;&#9733;</p>
+
+    <h2 id="topico10">Lista aninhada - não ordenada - dentro de outra lista</h2>
+    <ol class="lista-aninhada">
+        <li class="li-principal">
+            <span class = "titulo">Aprender HTML</span>
+            <ul>
+                <li class="riscar">Revisar estrutura básica</li>
+                <li>Criar página com titulos</li>
+                <li>Inserir parágrafos e listas</li>
             </ul>
+        </li>
 
-        <p class="autor">Autor: Ely Miranda | Data: 08/03/2026</p>
-        <p class = "separador">&#9733;&#9733;&#9733;</p>
-        <button onblur="trocarEstilo()">Trocar estilo</button>
+        <li class="li-principal">
+            <span class="titulo">Aprender CSS</span>
+            <ul>
+                <li class="riscar">Aplicar cores e fontes</li>
+            </ul>
+        </li>
 
-        <script>
-            let estiloAtual = 1;
-            function trocarEstilo(){
-                if(estiloAtual == 1){
-                    document.getElementById("estilo").href ="06style.css";
-                    estiloAtual = 2;
-                }
-                else if(estiloAtual == 2){
-                    document.getElementById("estilo").href ="07style.css";
-                    estiloAtual = 3;
-                }
-                else {
-                    document.getElementById("estilo").href = "05style.css";
-                    estiloAtual = 1;
-                }
+        <li class="li-principal">
+            <span class="titulo">Aprender JavaScript</span>
+            <ul>
+                <li class="riscar">Criar botão de teste</li>
+            </ul>
+        </li>
+    </ol>
+
+    <button onblur="trocarEstilo()">Trocar estilo</button>
+
+    <script>
+        let estiloAtual = 1;
+        function trocarEstilo(){
+            if(estiloAtual == 1){
+                document.getElementById("estilo").href ="06style.css";
+                estiloAtual = 2;
             }
-        </script>
+            else if(estiloAtual == 2){
+                document.getElementById("estilo").href ="07style.css";
+                estiloAtual = 3;
+            }
+            else {
+                document.getElementById("estilo").href = "05style.css";
+                estiloAtual = 1;
+            }
+        }
+    </script>
 </body>
 </html>
 

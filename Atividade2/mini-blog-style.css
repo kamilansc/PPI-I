@@ -95,3 +95,77 @@ h4{
 .inclinacao20deg{
     font-style: oblique 20deg;
 }
+
+.galeria-imgs{
+    display: flex;
+    gap:16px;
+    flex-wrap: wrap;
+}
+
+.img-teste{
+    width: 300px;
+}
+
+.img-picture-teste img{
+    width: 300px;
+}
+
+ol{
+    color: #e5e7eb;
+    list-style-position: inside;
+    max-width: 400px;
+    margin: auto;
+}
+
+.li-favorito{
+    background: #374151;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 12px 0;
+    transition: 0.2s;
+}
+
+.li-favorito:hover {
+    transform: translateX(6px);
+    background: #4b5563;
+}
+
+.li-favorito:first-child::before{
+    content: "🏆 ";
+}
+
+.lista-aninhada{
+    list-style-type: decimal-leading-zero;
+    color: black;
+    list-style-position: outside;
+}
+
+.li-principal{
+    background: #9f74b6;
+    border-left: 6px solid #855dc1;
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin: 12px 0;
+}
+
+.titulo{
+       font-weight: bold; 
+}
+
+.li-principal:hover{
+    transition: 0.2s;
+    transform: scale(1.05);
+    background: #855dc1;
+}
+
+.li-principal ul{
+    list-style-type: "🎯 ";
+}
+
+.riscar{
+    text-decoration: line-through;
+}
+
+.li-principal ul li{
+    padding: 3px;
+}
