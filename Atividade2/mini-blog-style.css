@@ -149,7 +149,7 @@ ol{
 }
 
 .titulo{
-       font-weight: bold; 
+    font-weight: bold; 
 }
 
 .li-principal:hover{
@@ -168,4 +168,25 @@ ol{
 
 .li-principal ul li{
     padding: 3px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1b5e75;
+    display: inline-block;
+    transition: 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: #e7d9b4;
+    text-decoration: underline;
+    
+    transform: translateX(6px);
+
+    font-size: large;
+}
+
+nav ul{
+    list-style-type:circle
 }
