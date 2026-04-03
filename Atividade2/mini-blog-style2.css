@@ -1,20 +1,39 @@
+:root {
+  --fundo: #F3F4F6;
+  --titulo: #1F2937;
+  --texto: #374151;
+  --roxo-principal: #7C3AED;
+  --roxo-claro: #C4B5FD;
+  --separador: #E5E7EB;
+}
+
 body{
-    background-color:#A5A692 ;
+    background-color:var(--fundo);
     font-family: Arial;
     margin: 1rem;
+    color: var(--texto);
 }
 
 h1{
-    background-color:  #011F26;
+    background-color: #d6cbff;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--titulo);
     font-size: 3rem;
     letter-spacing: .5rem;
+    border-radius: 10px;
 }
 
 h2 {
-    color: #025E73;
+    color: var(--titulo);
     font-size: 1.5em;
+
+    background-color: #EDE9FE;
+    border-left: 5px solid #7e5cec;
+
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 0;
+    display: inline-block;
 }
 
 h3 {
@@ -22,7 +41,8 @@ h3 {
 }
 
 .destaque {
-    background: linear-gradient(to top, #447d8a 50%, transparent 50%)
+    background: linear-gradient(to top, var(--roxo-claro) 50%, transparent 50%);
+    border-radius: 5px;
 }
 
 h4{
@@ -36,14 +56,17 @@ h4{
     font-style: italic;
     font-size: .8rem;
     
-    background-color: #BFB78F;
+    background-color: var(--roxo-claro);
     text-align: right;
 
+    border-radius: 2px;
 }
 
 .separador {
     text-align: center;
-    color: #025E73;
+    color: var(--roxo-principal);
+    
+    margin: 0;
 }
 
 
@@ -59,7 +82,7 @@ h4{
 }
 
 .recomendacao-site, .link-fonte{
-    color: blue;
+    color: #7e5cec;
     text-decoration:underline;
 }
 
@@ -97,6 +120,7 @@ h4{
 }
 
 .galeria-imgs{
+    justify-content: center;
     display: flex;
     gap:16px;
     flex-wrap: wrap;
@@ -172,7 +196,7 @@ ol{
 
 nav a{
     text-decoration: none;
-    color: #1b5e75;
+    color: var(--texto);
     display: inline-block;
     transition: 0.3s ease, color 0.3s ease;
     
@@ -184,15 +208,15 @@ nav a{
 nav a:hover {
     font-weight: bold;
     font-size: large;
-    color: #e7d9b4;
+    color: var(--roxo-principal);
     text-decoration: underline;
     
     transform: translateX(6px);
-    border-left: 3px #e7d9b4 solid;
+    border-left: 3px var(--roxo-principal) solid;
 }
 
 nav {
-    border: #011F26 solid;
+    border: var(--roxo-claro) solid;
     border-radius: 2rem;
     width: 650px;
     padding: 3px 0px 3px 10px;
@@ -205,9 +229,19 @@ nav ul{
 }
 
 .titulo-menu{
+    color: var(--titulo);
     width: 65px;
     margin-bottom: 2px;
-    border-bottom: #e7d9b4 solid;
+    border-bottom: var(--roxo-claro) solid;
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%
+}
+
+button {
+    background-color: var(--roxo-claro);
+    border-color: #7e5cec;
+    border-radius: 8px;
+
+    width: 8rem;
+    height: 2rem;
 }

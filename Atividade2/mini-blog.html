@@ -9,8 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tilt+Neon&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+    
     <link id="estilo" rel="stylesheet" href="mini-blog-style.css">
 </head>
 <body>
@@ -199,26 +200,26 @@
         </li>
     </ol>
 
-    <button onblur="trocarEstilo()">Trocar estilo</button>
+    <div class = "botao-conteiner">
+        <button onclick="trocarEstilo()">Trocar estilo</button>
+    </div>
 
     <script>
         let estiloAtual = 1;
         function trocarEstilo(){
             if(estiloAtual == 1){
-                document.getElementById("estilo").href ="06style.css";
+                document.getElementById("estilo").href ="mini-blog-style2.css";
                 estiloAtual = 2;
             }
             else if(estiloAtual == 2){
-                document.getElementById("estilo").href ="07style.css";
+                document.getElementById("estilo").href ="mini-blog-style3.css";
                 estiloAtual = 3;
             }
             else {
-                document.getElementById("estilo").href = "05style.css";
+                document.getElementById("estilo").href = "mini-blog-style.css";
                 estiloAtual = 1;
             }
         }
     </script>
 </body>
 </html>
-
-
