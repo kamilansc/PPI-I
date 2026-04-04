@@ -163,6 +163,10 @@ ol{
     list-style-position: outside;
 }
 
+.lista-aninhada ::marker {
+    color: white;
+}
+
 .li-principal{
     background: #9f74b6;
     border-left: 6px solid #855dc1;
@@ -217,8 +221,8 @@ nav a:hover {
 nav {
     border: var(--destaque) solid;
     border-radius: 2rem;
-    width: 650px;
-    padding: 3px 0px 3px 10px;
+    width: 100%;
+    max-width: 650px;
 }
 
 nav ul{
@@ -229,9 +233,10 @@ nav ul{
 
 .titulo-menu{
     color: var(--titulo);
-    width: 65px;
+    display: inline-block;
     margin-bottom: 2px;
-    border-bottom: var(--roxo-claro) solid;
+    margin-left: 2%;
+    border-bottom: #7e5cec solid;
     border-bottom-right-radius: 10%;
     border-bottom-left-radius: 10%
 }
