@@ -29,6 +29,9 @@
     /* Tables */
     --color-border-table: gray;
 
+    /* Scrollbar */
+    --collor-thumb-scrollbar: #bbb;
+
     /* Space */
     --space-xs: 5px;
     --space-sm: 15px;
@@ -112,6 +115,10 @@ header {
     padding: var(--space-lg);
     margin-bottom: var(--space-lg);
     box-shadow: var(--shadow)
+}
+
+.botao-menu {
+    display: none;
 }
 
 nav {
@@ -363,12 +370,73 @@ a:focus {
     flex: 1.5;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-}
 
-.sidebar {
+    align-self: flex-start;
     position: sticky;
     top: 20px;
+
+    max-height: calc(100vh - 20px);
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar{
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--collor-thumb-scrollbar);
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+.tabela-ferramentas {
+    border: 1px solid #444;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.tabela-ferramentas tr,
+.tabela-ferramentas td,
+.tabela-ferramentas th {
+    border: 1px solid #444;
+
+    padding: 2px;
+}
+
+.tabela-ferramentas tfoot{
+    background-color: white;
+    text-align: center;
+}
+
+.imagem-responsividade1 {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-responsividade2 {
+    width: 400px;
+    aspect-ratio: 16/9;
+}
+
+.imagem-responsividade3 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card fieldset {
+    border-radius: 10px;
+}
+
+.entrada-dados {
+    width: 100%;
 }
 
 @media (max-width: 900px) {
@@ -388,6 +456,31 @@ a:focus {
         flex-direction: column;
         width: 100%;
         align-items: stretch;
+    }
+
+    .botao-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 20px 0px 0px 0px;
+        cursor: pointer;
+        
+        background: none;
+        border: none;
+}
+
+    .botao-menu span {
+        width: 25px;
+        height: 3px;
+        background: white;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.ativo{
+        display: block;
     }
 
 }

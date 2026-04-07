@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="cores.js" defer></script>
+    <script src="botao_menu.js" defer ></script>
 </head>
 
 <body>
@@ -16,7 +17,14 @@
         <header>
             <h1 id="titulo">BLOG DO ADS - 3</h1>
             <h2 id="subtitulo">O melhor blog de atualidades</h2>
-            <nav>
+
+            <button id="botao-menu" class="botao-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+                
+            <nav id="menu" class="menu">
                 <ul>
                     <li><a href="#conteiner">Início</a></li>
                     <li>|</li>
@@ -31,6 +39,72 @@
 
         <main>
             <section id="artigos">
+
+                <!-- <article class="card">
+                    <h2>Imagens 2.0</h2>
+                    <img src="https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg" 
+                    rcset="https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg 480w, https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg 800w, https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg 1200w" 
+                    sizes="(max-width: 600px) 100vw, (max-width: 900px) 80vw, 1200px" alt="Paisagem">
+                </article> -->
+
+                <article class="card">
+                    <h2>Responsividade com imagens</h2>
+                    <h3>Max-widht: 100%</h3>
+                    <img class="imagem-responsividade1" src="https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg" alt="Imagem de golfinho azul na água">
+                    
+                    <h3>Proporção 16/9</h3>
+                    <img class="imagem-responsividade2" src="https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg" alt="Imagem de golfinho azul na água">
+
+                    <h3>Width: 100% + height</h3>
+                    <img class="imagem-responsividade3" src="https://kamilansc.github.io/PPI-I/Atividade3/imagens/pexels-genihoka-35766731.jpg" alt="Imagem de golfinho azul na água">
+
+                </article>
+
+                <article class="card">
+                    <table class="tabela-ferramentas">
+                        <caption>Ferramentas de Devs e suas funções</caption>
+                        <colgroup>
+                        <col span="1" style="background-color: bisque;">
+                        </colgroup>
+
+                        <thead>
+                            <tr>
+                                <th>Ferramenta</th>
+                                <th>Tipo</th>
+                                <th>Para que serve</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>MDN</td>
+                                <td>Documentação</td>
+                                <td>Aprender HTML/CSS/JS</td>
+                            </tr>
+                                <td>GitHub</td>
+                                <td>Versionamento</td>
+                                <td>Hospedar código</td>
+
+                            <tr>
+                                <td>Stack Overflow</td>
+                                <td>Fórum</td>
+                                <td>Tirar dúvidas</td>
+                            </tr>
+                            <tr>
+                                <td>DevDocs</td>
+                                <td>Documentação</td>
+                                <td>Consulta rápida</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Links selecionados para estudantes de desenvolvimento web.</td>
+                        </tfoot>
+                    </table>
+                    <p class="autor-data">por Kamila Rocha em 06/04/2026</p>
+                </article>
+
                 <article class="card" id="ultima">
                     <h2>Box model</h2>
 
@@ -42,54 +116,63 @@
                 </article>
                 <article class="card">
                     <h2>Formulários</h2>
-                    <h3>Mudar cores da página</h3>
-                    <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff">
-                    <input type="color" id="cor-texto" name="cor-texto">
+                        <h3>Mudar cores da página</h3>
+                        <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff">
+                        <input type="color" id="cor-texto" name="cor-texto">
 
-                    <h3>Formulário busca no google</h3>
-                    <form action="http://www.google.com/search" method="get">
-                        <input name="q">
-                        <input type="submit" value="Pesquisar">
-                    </form>
+                    <fieldset>
+                        <h3>Formulário busca no google</h3>
+                        <form action="http://www.google.com/search" method="get">
+                            <input class="entrada-dados" name="q">
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </fieldset>
 
-                    <h3>Busca no youtube</h3>
-                    <form action="https://www.youtube.com/results" method="get">
-                        <input name="search_query">
-                        <input type="submit" value="Pesquisar">
-                    </form>
+                    <fieldset>
+                        <h3>Busca no youtube</h3>
+                        <form action="https://www.youtube.com/results" method="get">
+                            <input class="entrada-dados" name="search_query">
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </fieldset>
 
-                    <h3>Formulário básico de login e senha</h3>
-                    <!-- nunca colocar o método get com dados sensíveis -->
-                    <form action="https://example.com/login" method="post">
-                        <label for="login">Login:</label>
-                        <input type="text" id="login" name="login"><br>
-                        <label for="senha">Senha:</label>
-                        <input type="password" id="senha" name="senha"><br>
-                        <input type="submit" value="Entrar">
-                    </form>
+                    <fieldset>
+                        <h3>Formulário básico de login e senha</h3>
+                        <!-- nunca colocar o método get com dados sensíveis -->
+                        <form action="https://example.com/login" method="post">
+                            <label for="login">Login:</label>
+                            <input type="text" id="login" name="login"><br>
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha"><br>
+                            <input type="submit" value="Entrar">
+                        </form>
+                    </fieldset>
 
-                    <h3>Formulário de cadastro com checkboxes e botoes de radio</h3>
-                    <form action="https://example.com/cadastro" method="get">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome"><br>
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email"><br>
-                        <p>Gênero:</p>
-                        <input type="radio" id="masculino" name="genero" value="masculino">
-                        <label for="masculino">Masculino</label><br>
-                        <input type="radio" id="feminino" name="genero" value="feminino">
-                        <label for="feminino">Feminino</label><br>
-                        <input type="radio" id="outro" name="genero" value="outro">
-                        <label for="outro">Outro</label><br>
-                        <p>Interesses:</p>
-                        <input type="checkbox" id="interesse1" name="interesse1">
-                        <label for="interesse1">Programação</label><br>
-                        <input type="checkbox" id="interesse2" name="interesse2">
-                        <label for="interesse2">Design</label><br>
-                        <input type="checkbox" id="interesse3" name="interesse3">
-                        <label for="interesse3">Marketing</label><br>
-                        <input type="submit" value="Cadastrar">
-                    </form>
+                    <fieldset>
+
+                        <h3>Formulário de cadastro com checkboxes e botoes de radio</h3>
+                        <form action="https://example.com/cadastro" method="get">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome"><br>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email"><br>
+                            <p>Gênero:</p>
+                            <input type="radio" id="masculino" name="genero" value="masculino">
+                            <label for="masculino">Masculino</label><br>
+                            <input type="radio" id="feminino" name="genero" value="feminino">
+                            <label for="feminino">Feminino</label><br>
+                            <input type="radio" id="outro" name="genero" value="outro">
+                            <label for="outro">Outro</label><br>
+                            <p>Interesses:</p>
+                            <input type="checkbox" id="interesse1" name="interesse1">
+                            <label for="interesse1">Programação</label><br>
+                            <input type="checkbox" id="interesse2" name="interesse2">
+                            <label for="interesse2">Design</label><br>
+                            <input type="checkbox" id="interesse3" name="interesse3">
+                            <label for="interesse3">Marketing</label><br>
+                            <input type="submit" value="Cadastrar">
+                        </form>
+                    </fieldset>
                     <p class="autor-data">por Ely Miranda em 03/03/2026</p>
                 </article>
                 

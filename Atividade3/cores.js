@@ -4,7 +4,6 @@ let inputCorFundo = document.getElementById('cor-fundo');
 inputCorTexto.addEventListener('input', () => {
     let cor = inputCorTexto.value;
     document.documentElement.style.setProperty('--cor-texto', cor);
-    console.log("Mudou a cor do texto");
 });
 
 inputCorFundo.addEventListener('input', () => {
