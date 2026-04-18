@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade da aula</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+</head>
+<body>
+    <h2 id = "titulo">Olá, seja bem vindo!</h2>
+    <button id = "mostrar-msg">Mostrar mensagem</button>
+
+    <p id="msg-botao"></p>
+
+    <button id="alterar-h3">Alterar textos</button>
+    <h3 id="tag-name"></h3>
+
+
+    <div id="quebra-linha">---</div>
+    <div class="div" id="div-principal">
+        <p id="p1">Estou aprendendo:</p>
+        <p id="p2">1. JavaScript</p>
+        <p id="p3">2. CSS</p>
+        <p id="p3">3. HTML</p>
+    </div>
+
+    <div>
+        <p id="qtd-itens-div">Quantidade de paragrafos: </p>
+        <button id="ativar-contagem">Contar Parágrafos</button>
+    </div>
+
+    <p id = paragrafo>Clique no botão abaixo para alterar o texto deste botão</p>
+    <button id="botao">Alterar texto</button>
+    <button id="botao-limpar">Limpar texto</button>
+
+    <h4 id="questao5">Qual a diferença entre as propriedades textContent,
+        innerText e innerHTML dos elementos HTML? Cite exemplos.
+    </h4>
+    <p><strong>textContent:</strong>
+        Altera apenas o texto. Em caso de trocar um texto e colocar uma formatação, por exemplo:
+        <pre><code>paragrafo.innerContent = &lt;b&gt;Olá&lt;/b&gt;</code></pre>
+        o innerContent não vai considerar o &lt;b&gt; &lt;/b&gt; (bold), ele só mostrará o texto simples, sem negrito.
+    </p>
+
+    <p><strong>innerText:</strong>
+    No caso do innerText, ele considera o CSS então, se aplicado innerText no
+    exemplo acima ele mostrará a mensagem em negrito pela aplicação da tag &lt;b&gt; &lt;/b&gt; (bold).
+    </p>
+
+    <p><strong>innerHTML: </strong>
+    O innerHTML interpreta HTML então se colocar, por exemplo: &lt;b&gt;Olá&lt;/b&gt; ele irá
+    identificar tags HTML, interpretá-las e aplicá-las ao texto.
+    </p>
+
+    <h4>Mudança de estilo por meio do DOM no JavaScript</h4>
+    <p>Clique no botão abaixo para mudar a cor da página</p>
+    <button id="botao-mudar-cor">Mudar cor</button>
+    <details>O botão acima é vinculado a um randomizador de números que define diferentes cores para o plano de fundo.</details>
+
+    <h4>Transformar texto normal para caixa alta</h4>
+    <p id="texto-normal">Álbum Arirang - from BTS</p>
+    <p id="texto-caixa-alta"><strong>Clique para ver o texto acima em caixa alta aqui</strong></p>
+    <button id="to-upper">Modificar texto</button>
+
+    <h4>Mudar estilo da página para "Modo Escuro"</h4>
+    <button id="modo-escuro">Modo escuro</button>
+    <button id="modo-normal">Modo normal</button>
+
+    <h4>Aumentar fontes da página</h4>
+    <button id="aumentar-fonte">Aumentar texto</button>
+    <button id="diminuir-fonte">Diminuir texto</button>
+
+    <h4>Calculadora Simples</h4>
+    <input type="text" id="operador1">
+    <input type="text" id="operador2">
+
+    <input type="radio" name="operacao" value="adicao"> Adição
+    <input type="radio" name="operacao" value="subtracao"> Subtração
+    <input type="radio" name="operacao" value="multiplicacao"> Multiplicação
+    <input type="radio" name="operacao" value="divisao"> Divisão
+
+    <button id="calcular">Calcular</button>
+    <p id="resultado">Resultado = </p>
+
+
+    <h4>Adicionar elementos em uma lista</h4>
+    <input type="text" id="elemento">
+    <ul id="lista"></ul>
+    <button id="adicionar-li">Adicionar à lista</button>
+</body>
+</html>

@@ -1,0 +1,11 @@
+#quebra-linha{
+    background-color: rgb(214, 189, 154);
+    text-align: center;
+    color:aliceblue;
+}
+
+.div {
+    border: 1.4px dotted black;
+    display: inline-block;
+    padding: 10px;
+}
