@@ -1,0 +1,22 @@
+.oculto {
+    display: none;
+}
+
+#mensagemErroPadrao {
+    color: red;
+    margin-top: 10px;
+}
+
+p{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#questao2 {
+    margin: 2em 0em 0em 0em;
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
