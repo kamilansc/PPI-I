@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <fieldset>
-        <legend>Mensagem de Erro</legend>
+        <legend>Questão 1 - Mensagem de Erro</legend>
         <p>Digite a mensagem de erro que deseja exibir:</p>
         <input id="msgErroOpcional" placeholder="Digite aqui">
         <button id="botaoErro">Mostrar erro</button>
@@ -17,7 +17,7 @@
     </fieldset>
 
     <fieldset>
-        <legend>Mensagem de Erro</legend>
+        <legend>Questão 2 - Mensagem de Erro</legend>
         <div id="questao2">
             <label for="caixaDeTexto">Digite o texto:</label>
             <input type="text" id="caixaDeTexto">
@@ -25,6 +25,47 @@
             <div id="conteudo"></div>
         </div>
     </fieldset>
+
+    <fieldset>
+        <legend>Questão 3 - Cálculo de Engajamento</legend>
+        <div id="questao3">
+            <label for="qtdInteracoes">Número de interações:</label>
+            <input type="text" id="qtdInteracoes">
+            <label for="qtdVisualizacoes">Número de vizualizações:</label>
+            <input type="text" id="qtdVisualizacoes">
+        </div>
+        <button id="calcularEngajamento">Calcular</button>
+        
+        <div id="resultado"></div>
+        <div id="erro"></div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Questão 4 - Upload de arquivo</legend>
+        <div id="questao4">
+            <label for="uploadImagem">Escolha o arquivo</label>
+            <input type="file" id="uploadImagem" accept="image/*">
+            <button id="carregarImagem">Carregar</button>
+        </div>
+        
+        <div id="resultadoImg"></div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Questão 5 - Seleção de arquivo</legend>
+        <div id="questao5">
+            <select id="seletorImg">
+                <option value="">Selecione uma Imagem</option>
+                <option value="https://images.pexels.com/photos/32044011/pexels-photo-32044011.jpeg">Flor</option>
+                <option value="https://images.pexels.com/photos/37270618/pexels-photo-37270618.jpeg">Bolo confeitado</option>
+                <option value="https://images.pexels.com/photos/37543997/pexels-photo-37543997.jpeg">Cachoeira</option>
+            </select>
+        </div>
+        <div class = "container">
+            <img id="imgSelecionada">
+        </div>
+    </fieldset>
+    
 
 </body>
 </html>

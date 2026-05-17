@@ -2,7 +2,7 @@
     display: none;
 }
 
-#mensagemErroPadrao {
+#mensagemErroPadrao, #conteudo {
     color: red;
     margin-top: 10px;
 }
@@ -13,10 +13,28 @@ p{
 }
 
 #questao2 {
-    margin: 2em 0em 0em 0em;
+    margin: 1em 0em 0em 0em;
 }
 
 fieldset {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#questao3, #questao4 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+#qtdInteracoes, #qtdVisualizacoes {
+    width: 15%;
+}
+
+#carregarImagem {
+    width: fit-content;
+}
+
+.container {
+    display: none;
 }
