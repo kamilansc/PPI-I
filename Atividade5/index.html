@@ -10,9 +10,11 @@
 <body>
     <fieldset>
         <legend>Questão 1 - Mensagem de Erro</legend>
-        <p>Digite a mensagem de erro que deseja exibir:</p>
-        <input id="msgErroOpcional" placeholder="Digite aqui">
-        <button id="botaoErro">Mostrar erro</button>
+        <div>
+            <p class="enunciado">Digite a mensagem de erro que deseja exibir:</p>
+            <input id="msgErroOpcional" placeholder="Digite aqui">
+            <button id="botaoErro">Mostrar erro</button>
+        </div>
         <div id="mensagemErroPadrao" class="oculto">O campo deve ser preenchido</div>
     </fieldset>
 
@@ -20,7 +22,7 @@
         <legend>Questão 2 - Mensagem de Erro</legend>
         <div id="questao2">
             <label for="caixaDeTexto">Digite o texto:</label>
-            <input type="text" id="caixaDeTexto">
+            <input type="text" id="caixaDeTexto" placeholder="Digite aqui">
             <button id="botaoExibir">Exibir</button>
             <div id="conteudo"></div>
         </div>
@@ -28,13 +30,15 @@
 
     <fieldset>
         <legend>Questão 3 - Cálculo de Engajamento</legend>
-        <div id="questao3">
+        <div id="bloco">
             <label for="qtdInteracoes">Número de interações:</label>
-            <input type="text" id="qtdInteracoes">
+            <input type="text" id="qtdInteracoes" placeholder="Digite aqui">
             <label for="qtdVisualizacoes">Número de vizualizações:</label>
-            <input type="text" id="qtdVisualizacoes">
+            <input type="text" id="qtdVisualizacoes" placeholder="Digite aqui">
+            <div>
+                <button id="calcularEngajamento">Calcular</button>
+            </div>
         </div>
-        <button id="calcularEngajamento">Calcular</button>
         
         <div id="resultado"></div>
         <div id="erro"></div>
@@ -42,7 +46,7 @@
 
     <fieldset>
         <legend>Questão 4 - Upload de arquivo</legend>
-        <div id="questao4">
+        <div id="bloco">
             <label for="uploadImagem">Escolha o arquivo</label>
             <input type="file" id="uploadImagem" accept="image/*">
             <button id="carregarImagem">Carregar</button>
@@ -65,7 +69,87 @@
             <img id="imgSelecionada">
         </div>
     </fieldset>
+
+    <fieldset>
+        <legend>Questão 6 - Seleção de redes sociais favoritas</legend>
+        <div>
+            <input type="checkbox" id="facebook" name="redesSociais" value="Facebook">
+            <label for="facebook">Facebook</label>
+        </div>
+        <div>
+            <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+            <label for="twitter">Twitter</label>
+        </div>
+        <div>
+            <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+            <label for="instagram">Instagram</label>
+        </div>
+        <div>
+            <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+            <label for="linkedin">LinkedIn</label>
+        </div>
+        <div>
+            <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+            <label for="tiktok">TikTok</label>
+        </div>
+        
+        <div>
+            <button type="button" id="enviarEscolhas">Enviar Seleção(ões)</button>
+            <button type="button" id="limparSelecao">Limpar Seleção(ões)</button>
+        </div>
+        
+        <div class = "oculto" id="mensagemErro"></div>
+        <div id="redesSelecionadas" class="enunciado"></div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Questão 7 - Lista de Hashtags</legend>
+        <div id="bloco">
+            <div>
+                <label for="obterHash">Digite a hashtag:</label>
+                <input type="text" id="obterHash" placeholder="Digite aqui">
+            </div>
+            
+            <div>
+                <button id="addHash">Submeter hashtag</button>
+                <button id="delHash">Remover hashtag</button>
+            </div>
+            
+            <select id="listaHash" size="5"></select>
+        </div>
+    </fieldset>
     
+    <fieldset>
+        <legend>Questão 8 - Mover Ativos Financeiros entre carteiras</legend>
+        
+        <div class="container2">
+            <div id="bloco">
+                <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+                <select id="ativosDisponiveis" size="10" multiple>
+                    <option value="AAPL">Apple (AAPL)</option>
+                    <option value="GOOGL">Google (GOOGL)</option>
+                    <option value="AMZN">Amazon (AMZN)</option>
+                    <option value="MSFT">Microsoft (MSFT)</option>
+                    <option value="TSLA">Tesla (TSLA)</option>
+                    <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                    <option value="FB">Meta (FB)</option>
+                    <option value="V">Visa (V)</option>
+                    <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                    <option value="WMT">Walmart (WMT)</option>
+                </select>
+            </div>
+        
+            <div id="bloco" class="buttons">
+                <button id="moverParaDireitaBtn">></button>
+                <button id="moverParaEsquerdaBtn"><</button>
+            </div>
+        
+            <div id="bloco">
+                <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+                <select id="carteiraInvestimentos" size="10" multiple></select>
+            </div>
+        </div>
+    </fieldset>
 
 </body>
 </html>
