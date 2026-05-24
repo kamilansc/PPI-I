@@ -103,18 +103,27 @@ seletor.addEventListener("change", exibirImg);
 function exibirImg(){
     let caixaImg = q("#imgSelecionada");
 
+    caixaImg.style.opacity = 0;
+
     if (seletor.value === ""){
         caixaImg.alt = "";
-        caixaImg.src = "";
+        
+        setTimeout(() => {
+            caixaImg.src = "";
 
-        caixaImg.style.width = "auto";
-        caixaImg.style.height = "auto";
+            caixaImg.style.width = "auto";
+            caixaImg.style.height = "auto";
 
-        q(".container").style.display = "none";
+            q(".container").style.display = "none";
+        }, 400);
 
         return;
     }
-    caixaImg.src = seletor.value;
+
+    setTimeout(() => {
+        caixaImg.src = seletor.value;
+        caixaImg.style.opacity = 1;
+    }, 400);
 
     if (caixaImg.src === "https://images.pexels.com/photos/32044011/pexels-photo-32044011.jpeg") {//link direto do pexel
         caixaImg.alt = "Fotografia de uma flor tulipa";
