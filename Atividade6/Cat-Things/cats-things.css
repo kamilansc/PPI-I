@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif; 
+    background-color: #fdf6f9;
+    color: #444;
+
+}
+
+.container {
+    width: 55%;
+    height: 90vh;
+    margin: 2rem auto;
+    padding: 20px;
+    gap: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.caixaImg {
+    width: 80%;
+    max-width: 80%;;
+    height: 50vh;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixaImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    overflow: hidden;
+    border: 2px solid pink;
+    border-radius: 15px;
+}
+
+.comando {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    width: 65%;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.botao {
+    font-family: "Playfair Display", serif;
+    font-size: medium;
+    color: #444;
+    
+    width: 100%;
+    padding: 12px 24px;
+    
+    border-radius: 30px;
+    border: none;
+
+    background-color: #ffd6e7;
+
+    transition: 0.2s;
+    
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #feb1d3;
+}
+
+.botao:active {
+    background-color: #ff93c2;
+}
+
+#resultado {
+    width: 100%;
+    height: 15vh;
+    padding: 20px;
+
+    overflow-y: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #ffeef5;;
+    color: #444;
+
+    border-radius: 15px;
+}
